@@ -87,11 +87,11 @@ section img {
 }
 
 #page-01 {
-    background-image: url("page-01-bg.jpg");
+    background-image: url("aza.jpg");
 }
 
 #page-02 {
-    background-image: url("https://placehold.jp/87ceeb/ffffff/1200x800.png?text=page-02");
+    background-image: url("nyaru.jpg");
 }
 
 #page-02 img {
@@ -99,7 +99,9 @@ section img {
 }
 
 #page-03 {
-    background-image: url("https://placehold.jp/eeeec9/ffffff/1200x800.png?text=page-03");
+    background-image: url("nyaru.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #page-04 {
