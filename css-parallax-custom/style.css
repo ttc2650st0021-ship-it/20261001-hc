@@ -14,6 +14,7 @@ html {
 body {
     font-family: sans-serif;
     line-height: 1;
+
 }
 
 /* セクション共通のスタイル */
@@ -32,6 +33,7 @@ section {
     /* セクション内のテキスト */
     color: white;
     text-shadow: 2px 2px #333;
+
 }
 
 /* 奇数番目のセクション共通のスタイル */
@@ -45,7 +47,7 @@ section:nth-of-type(odd) {
     width: 800;
     min-height: 300px;
     margin: auto;
-    background-color: rgba(0,0,0, .2);
+    background-color: rgba(0, 0, 0, .2);
 }
 
 /* 見出しと文章のスタイル */
@@ -55,6 +57,30 @@ h1 {
     text-align: center;
     letter-spacing: 4px;
     text-shadow: 3px 3px 1px #333;
+
+    font-size: 4rem;
+    font-weight: 900;
+
+    /* 2. 壮大さを出す定番のフォントファミリー（大文字・セリフ体が効果的） */
+    font-family: 'Cinzel', 'Times New Roman', 'Georgia', serif;
+    text-transform: uppercase;
+    /* すべて大文字にする */
+
+    /* 3. 文字間隔を広げて重厚感を出す */
+    letter-spacing: 0.15em;
+
+    /* 4. 高級感のあるゴールドのグラデーション文字にする */
+    background: linear-gradient(to bottom, #ffe680 0%, #d4af37 50%, #996515 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* 5. 立体感と重厚感を与えるドロップシャドウ（影） */
+    filter: drop-shadow(2px 4px 6px rgba(189, 134, 134, 0.7));
+background-color: rgba(0, 0, 0, 0.5); /* 0.5は半透明度（0〜1） */
+  padding: 20px 40px;
+  border-radius: 8px; /* 角を少し丸くする場合 */
+  display: inline-block;
+  
 }
 
 h2 {
@@ -75,6 +101,7 @@ section img {
 
 #page-top {
     background-image: url("azato-su.jpg");
+    background-attachment: fixed;
     flex-wrap: wrap;
     align-content: center;
 }
@@ -84,14 +111,32 @@ section img {
     text-align: center;
     margin-top: 2em;
     font-size: 30px;
+        /* 2. 壮大さを出す定番のフォントファミリー（大文字・セリフ体が効果的） */
+    font-family: 'Cinzel', 'Times New Roman', 'Georgia', serif;
+    text-transform: uppercase;
+    /* すべて大文字にする */
+
+    /* 3. 文字間隔を広げて重厚感を出す */
+    letter-spacing: 0.15em;
+
+    /* 4. 高級感のあるゴールドのグラデーション文字にする */
+    background: linear-gradient(to bottom, #ffe680 0%, #d4af37 50%, #996515 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* 5. 立体感と重厚感を与えるドロップシャドウ（影） */
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.7));
+
 }
 
 #page-01 {
+    background-image: none;
     background-image: url("aza.jpg");
 }
 
 #page-02 {
-    background-image: url("nyaru.jpg");
+    background-image: url("haikei.jpg");
+    display: flex;
 }
 
 #page-02 img {
@@ -100,10 +145,17 @@ section img {
 
 #page-03 {
     background-image: url("nyaru.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 #page-04 {
-    background-image: url("https://placehold.jp/d2691e/ffffff/1200x800.png?text=page-04");
+    background-image: url("ravu.webp");
+}
+
+/* 追加分 */
+
+p {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
